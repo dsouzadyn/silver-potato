@@ -8,9 +8,9 @@ from data_prepper import *
 # 3. No. of outputs
 # in that order
 
-test_nn_and = ToyNeuralNetwork(2,4,1)
-test_nn_xor = ToyNeuralNetwork(2,3,1)
-test_nn_or = ToyNeuralNetwork(2,2,1)
+test_nn_and = ToyNeuralNetwork(2,3,3,1)
+test_nn_xor = ToyNeuralNetwork(2,3,3,1)
+test_nn_or = ToyNeuralNetwork(2,3,3,1)
 
 training_and = get_and_training()
 training_or = get_or_training()
