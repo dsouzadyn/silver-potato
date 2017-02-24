@@ -7,6 +7,7 @@ from data_prepper import *
 # 2. No. of hidden inputs
 # 3. No. of outputs
 # in that order
+from visualizer import *
 
 test_nn_and = ToyNeuralNetwork(2,3,3,1)
 test_nn_xor = ToyNeuralNetwork(2,3,3,1)
@@ -22,16 +23,19 @@ test_data = [[0, 1], [1, 0], [0, 0], [1, 1]]
 
 print "Training with AND Gate data:"
 test_nn_and.train(training_and)
+visualize_two_hidden(test_nn_and)
 print "Predicting test data:"
 print test_nn_and.predict(test_data)
 
 print "Training with OR Gate data:"
 test_nn_or.train(training_or)
+visualize_two_hidden(test_nn_or)
 print "Predicting test data:"
 print test_nn_or.predict(test_data)
 
 print "Training with XOR Gate data:"
 test_nn_xor.train(training_xor)
+visualize_two_hidden(test_nn_xor)
 print "Predicting test data:"
 print test_nn_xor.predict(test_data)
 
